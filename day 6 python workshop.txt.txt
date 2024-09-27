@@ -1,0 +1,173 @@
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+s='Shailee'
+type(s)
+<class 'str'>
+x="""I like momo pizza panipuri
+icecream and every food"""
+type(x)
+<class 'str'>
+x
+'I like momo pizza panipuri\nicecream and every food'
+s[0]
+'S'
+s[1]
+'h'
+s[5]
+'e'
+s[4]
+'l'
+s[-1]
+'e'
+s="This is GEC Vaishali,Python Workhop."
+s[0:4]
+'This'
+s[6:7]
+'s'
+s[6:8]
+'s '
+s[0:3]
+'Thi'
+s[5:7]
+'is'
+s[-1:-5]
+''
+s[-1]
+'.'
+s[-2:4]
+''
+s[-5:-1]
+'khop'
+s[-4:-1]
+'hop'
+s[-3:-1]
+'op'
+s[-2:-1]
+'p'
+s[-1:-1]
+''
+s[0:1]
+'T'
+r="shailee"
+s="priya"
+r+s
+'shaileepriya'
+r="shailee"
+print("My name is %s",s)
+My name is %s priya
+print("My name is %r",r)
+My name is %r shailee
+print("My name is%r",%r)
+SyntaxError: invalid syntax
+print("My name is %r"%r)
+My name is 'shailee'
+str("this is rohit house")
+'this is rohit house'
+str=
+SyntaxError: invalid syntax
+str
+<class 'str'>
+s="{} is state college"
+s="{} is state college".format("GEC Vaishali")
+s
+'GEC Vaishali is state college'
+str="I am shailee"
+str
+'I am shailee'
+l=[12,"Shailee",0.7,True]
+type(l)
+<class 'list'>
+l[1]
+'Shailee'
+l[0]
+12
+l[3]
+True
+l[0]
+12
+l[0]=123
+l[0]
+123
+l
+[123, 'Shailee', 0.7, True]
+l[3]=False
+l[3]
+False
+l
+[123, 'Shailee', 0.7, False]
+l=[12,"Shailee",0.7,True]
+l.append(89)
+l
+[12, 'Shailee', 0.7, True, 89]
+l.insert(3,67)
+l
+[12, 'Shailee', 0.7, 67, True, 89]
+l.insert(0,"Rohit")
+l
+['Rohit', 12, 'Shailee', 0.7, 67, True, 89]
+l.pop()
+89
+l
+['Rohit', 12, 'Shailee', 0.7, 67, True]
+l.remove(12)
+l
+['Rohit', 'Shailee', 0.7, 67, True]
+l[2:4]
+[0.7, 67]
+l
+['Rohit', 'Shailee', 0.7, 67, True]
+l[1:2]
+['Shailee']
+l=[12,"Shailee",0.7,True]
+len(l)
+4
+max(l)
+Traceback (most recent call last):
+  File "<pyshell#85>", line 1, in <module>
+    max(l)
+TypeError: '>' not supported between instances of 'str' and 'int'
+t=(12,"Shailee",6.8)
+type(t)
+<class 'tuple'>
+t[0]
+12
+    t[0]=7
+TypeError: 'tuple' object does not support item assignment
+>>> t.count(4,5,7,6,9,6,4,6,7,6,2,6,2,6)
+Traceback (most recent call last):
+  File "<pyshell#91>", line 1, in <module>
+    t.count(4,5,7,6,9,6,4,6,7,6,2,6,2,6)
+TypeError: tuple.count() takes exactly one argument (14 given)
+>>> t.count(6)
+0
+>>> t=(4,5,7,6,9,6,4,6,7,6,2,6,2,6)
+>>> t.count(6)
+6
+>>> Days = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}
+>>> print(Days)
+{'Sunday', 'Monday', 'Wednesday', 'Saturday', 'Tuesday', 'Thursday', 'Friday'}
+>>> sets={"GECV","MIT")
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '{'
+>>> sets={"GECV","MIT"}
+>>> type(sets)
+<class 'set'>
+>>> sets2=set(["mom","tues","wed"])
+>>> type(sets2)
+<class 'set'>
+>>> print(sets2)
+{'tues', 'mom', 'wed'}
+>>> print(sets)
+{'GECV', 'MIT'}
+>>> type(Days)
+<class 'set'>
+>>> sets2[1]
+Traceback (most recent call last):
+  File "<pyshell#105>", line 1, in <module>
+    sets2[1]
+TypeError: 'set' object is not subscriptable
+>>> sets2.add("thrus")
+>>> sets2
+{'tues', 'mom', 'thrus', 'wed'}
+>>> sets2.discard("tues")
+>>> sets2
+{'mom', 'thrus', 'wed'}
